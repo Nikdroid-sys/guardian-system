@@ -1,0 +1,14 @@
+# Server & Transport
+fastmcp>=3.0.0
+mcp>=1.2.0
+httpx>=0.27.0
+
+# Agent & Orchestration
+langgraph>=0.2.0
+langchain-openai
+python-dotenv
+pydantic>=2.0.0
+
+# System & UI
+uv>=0.5.0
+rich>=13.0.0

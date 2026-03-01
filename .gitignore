@@ -1,0 +1,29 @@
+# --- Guardian-MCP Specific ---
+# We ignore the vault because it contains binaries/packages 
+# that should be provisioned fresh on each machine.
+guardian_vault/
+.env
+
+# --- Python / UV Environment ---
+.venv/
+.env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version
+
+# --- LangGraph / LLM Cache ---
+.langgraph_api/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Locks (Optional) ---
+# It is actually recommended to COMMIT uv.lock for reproducibility 
+# but if you prefer a 'loose' repo, you can uncomment the line below:
+# uv.lock
